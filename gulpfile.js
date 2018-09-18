@@ -20,8 +20,8 @@ gulp.task('sass', function () {
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) //добавляем префиксы
         .pipe(cssnano())
         .pipe(gulp.dest('app/css')) //выгружаем в папку css
-        .pipe(gulp.dest('dist/css')); //выгружаем в папку css
-        // .pipe(browserSync.reload({stream: true}))
+        .pipe(gulp.dest('dist/css')) //выгружаем в папку css
+        .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('scripts', function () {
@@ -72,7 +72,7 @@ gulp.task('img', function () {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('watch', ['css-libs', 'scripts'], function () {
+gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
     gulp.watch('app/sass/**/*.scss', ['sass']);
     gulp.watch('app/sass/blocks/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
@@ -94,8 +94,8 @@ gulp.task('build', ['img', 'sass', 'scripts'], function () {
     var buildJs = gulp.src('app/js/**/*')
         .pipe(gulp.dest('dist/js'));
 
-    /*var buildHtml = gulp.src('app/!*.html')
-        .pipe(gulp.dest('dist'));*/
+    var buildHtml = gulp.src('app/*.html')
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', ['watch']);

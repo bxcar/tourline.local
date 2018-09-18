@@ -1,0 +1,53 @@
+.city {
+  width: 370px;
+  height: 225px;
+  box-sizing: border-box;
+  border: 7px solid rgba(255,255,255, 0.65);
+  //background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: -7px -7px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.city__title {
+  font-family: 'Avenir Next Cyr';
+  font-size: 19px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-top: 170px;
+
+  &--middle {
+    margin-top: 80px;
+  }
+
+  &--middle::after {
+    display: none;
+  }
+}
+
+.city__title-dots {
+  display: block;
+  margin-top: -15px;
+  font-size: 40px;
+  color: #babbbb;
+}
+
+.city__title::after {
+  content: "";
+  width: 276px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-top: 2px solid rgba(255, 255, 255, 0.11);
+}

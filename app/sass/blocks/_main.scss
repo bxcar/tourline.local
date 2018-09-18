@@ -1,0 +1,47 @@
+.main__container {
+  width: 1290px;
+  box-sizing: border-box;
+  border: 13px solid rgba(250,250, 250, 0.57);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -125px;
+}
+
+.main__container-inner {
+  background: url(/img/main_bg.png);
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.main__title {
+  margin-top: 0;
+  font-family: 'Avenir Next Cyr';
+  font-size: 36px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.main__title::after {
+  content: "";
+  width: 303px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-top: 2px solid #ecebe9;
+}
+
+.main__cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
