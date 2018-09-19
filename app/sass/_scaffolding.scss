@@ -193,16 +193,28 @@ body {
 .absimg1 {
   position: absolute;
   top: 1580px;
+
+  &--services {
+    top: 1130px;
+  }
 }
 
 .absimg2 {
   position: absolute;
   top: 2185px;
   right: 0;
+
+  &--services {
+    top: 1600px;
+  }
 }
 
 .absimg3 {
   position: absolute;
   top: 730px;
   right: 0;
+
+  &--services {
+    top: 540px;
+  }
 }
