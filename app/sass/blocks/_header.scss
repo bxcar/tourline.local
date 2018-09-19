@@ -1,3 +1,11 @@
+.header {
+  &--footer {
+    margin-top: -113px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -64,6 +72,10 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 35px;
+
+  &--footer {
+    padding-top: 170px;
+  }
 }
 
 .header__address {
@@ -146,4 +158,26 @@
 
 .header__call-button-text i {
   margin-right: 10px;
+}
+
+.header__copyright-top {
+  font-family: 'Avenir Next Cyr';
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  font-weight: 500;
+  font-style: normal;
+  display: block;
+}
+
+.header__copyright-bottom {
+  font-family: 'Avenir Next Cyr';
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  font-weight: 300;
+  font-style: normal;
+  display: block;
 }

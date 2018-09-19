@@ -177,6 +177,7 @@
 
 body {
   margin: 0;
+  background: #f9f7f7;
 }
 
 .overlay {
@@ -187,4 +188,21 @@ body {
   height: 100%;
   opacity: 0.4;
   background: #000;
+}
+
+.absimg1 {
+  position: absolute;
+  top: 1580px;
+}
+
+.absimg2 {
+  position: absolute;
+  top: 2185px;
+  right: 0;
+}
+
+.absimg3 {
+  position: absolute;
+  top: 730px;
+  right: 0;
 }
