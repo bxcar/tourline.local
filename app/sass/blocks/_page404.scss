@@ -1,0 +1,67 @@
+.page404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.page404__404 {
+  font-family: 'Avenir Next Cyr';
+  font-size: 36px;
+  line-height: 26px;
+  color: #023172;
+  font-weight: bold;
+  font-style: normal;
+  position: relative;
+}
+
+.page404__404::after {
+  content: "";
+  width: 303px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-top: 2px solid #eae8e8;
+}
+
+.page404__text {
+  font-family: 'Avenir Next Cyr';
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 56px;
+}
+
+.page404__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.page404__backlink {
+  font-family: 'Avenir Next Cyr';
+  font-size: 18px;
+  line-height: 26px;
+  color: #043372;
+  font-weight: bold;
+  font-style: normal;
+  margin-right: 57px;
+}
+
+.page404__tomain {
+  font-family: 'Avenir Next Cyr';
+  font-size: 18px;
+  line-height: 26px;
+  color: #043372;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+}
