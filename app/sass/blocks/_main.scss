@@ -127,6 +127,100 @@
   &--services {
     margin-bottom: 0;
   }
+
+  &--services-left-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--services-right-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--white-bg {
+    background-color: #fff;
+    background-image: url(/img/exclamation-point.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    padding: 30px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    border: 1px solid #f2f1ef;
+    border-bottom: none;
+    box-shadow: 0 15px 7px -2px #f3f3f1;
+  }
+}
+
+.main__center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 47px;
+}
+
+.main__text-block-img {
+  &--right {
+    padding-left: 35px;
+  }
+
+  &--left {
+    padding-right: 35px;
+  }
+}
+
+.main__text-block ol {
+  font-family: 'Avenir Next Cyr';
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  font-weight: 500;
+  font-style: normal;
+
+  margin: 0 0 1.5em;
+  padding: 0;
+  padding-left: 40px;
+  counter-reset: item;
+}
+
+.main__text-block ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+.main__text-block ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+.main__text-block ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 40px;
+  margin: 0;
+
+  font-family: 'Avenir Next Cyr';
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.main__text-block ul li {
+  background-image: url(/img/ellipse.png);
+  background-repeat: no-repeat;
+  padding-left: 17px;
+  background-position-y: center;
 }
 
 .main__text-block-title {
@@ -136,6 +230,26 @@
   color: #333333;
   font-weight: bold;
   font-style: normal;
+
+  &--h2 {
+    font-size: 24px;
+  }
+  &--h3 {
+    font-size: 22px;
+  }
+  &--h4 {
+    font-size: 20px;
+  }
+  &--h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  &--h6 {
+    font-size: 17px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
 }
 
 .main__text-block-desc {
@@ -145,6 +259,11 @@
   color: #666666;
   font-weight: 500;
   font-style: normal;
+
+  &--relative {
+    position: relative;
+    top: 25px;
+  }
 }
 
 .main__city {
@@ -188,4 +307,66 @@
   font-style: normal;
   margin-left: -30px;
 }
+
+.main__table {
+  width: 995px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__table th {
+  font-family: 'Avenir Next Cyr';
+  font-size: 18px;
+  line-height: 48px;
+  color: #003580;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.main__table th:first-child {
+  text-align: left;
+}
+
+.main__table td:last-child {
+  text-align: center;
+  font-family: 'Avenir Next Cyr';
+  font-size: 20px;
+  line-height: 48px;
+  color: #000000;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.main__table td:first-child {
+  font-family: 'Avenir Next Cyr';
+  font-size: 18px;
+  line-height: 48px;
+  color: #000000;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.main__table td {
+  border-bottom: 1px solid #f2f2f0;
+}
+
+.main__table tr:last-child td {
+  border-bottom: none;
+}
+
+.main__table-caption {
+  font-family: 'Avenir Next Cyr';
+  font-size: 15px;
+  line-height: 24px;
+  color: #929190;
+  font-weight: normal;
+  font-style: normal;
+
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
 
