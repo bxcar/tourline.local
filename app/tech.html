@@ -208,7 +208,8 @@
                 </div>
 
                 <div class="main__text-block-inner-wrap">
-                    <p class="main__text-block-desc main__text-block-desc--relative">Не следует, однако забывать, что сложившаяся структура организации
+                    <p class="main__text-block-desc main__text-block-desc--relative">Не следует, однако забывать, что
+                        сложившаяся структура организации
                         требуют определения и уточнения систем массового участия. С другой стороны консультация с
                         широким активом представляет собой интересный эксперимент проверки систем массового участия.
                         Задача организации, в особенности же реализация намеченных плановых заданий играет важную роль в
@@ -229,18 +230,29 @@
                     <input class="main__form1-input" placeholder="Пункт прибытия">
                     <input class="main__form1-input" placeholder="Примечания">
                     <input class="main__form1-input" placeholder="E-mail">
-                    <span class="main__form1-checkboxtitle">Тип поездки:</span>
-                    <input type="checkbox" id="transfer" name="tourtype" value="Трансфер"/>
-                    <label for="transfer">Трансфер</label>
-                    <input type="checkbox" id="shoptour" name="tourtype"
-                           value="Шоп-тур"/>
-                    <label for="shoptour">Шоп-тур</label>
+                    <div class="main__form1-checkboxwrapper">
+                        <span class="main__form1-checkboxtitle">Тип поездки:</span>
+                        <!--<input type="checkbox" id="transfer" name="tourtype" value="Трансфер"/>-->
+                        <!--<label class="main__form1-label" for="transfer">Трансфер</label>-->
+                        <label class="main__form1-label">
+                            <input class="main__form1-checkbox" type="radio" name="tourtype">
+                            <span class="main__checkbox-indicator"></span> Трансфер
+                        </label>
+                        <!--<input type="radio" id="shoptour" name="tourtype"
+                               value="Шоп-тур"/>
+                        <label class="main__form1-label" for="shoptour">Шоп-тур</label>-->
+                        <label class="main__form1-label">
+                            <input checked class="main__form1-checkbox" type="radio" name="tourtype">
+                            <span class="main__checkbox-indicator"></span> Шоп-тур
+                        </label>
+                    </div>
                     <input class="main__form1-submit" type="submit">
                 </form>
                 <form id="form2" class="main__form2" action="/" method="post">
                     <span class="main__form2-title">Оплата трансфера</span>
                     <span class="main__form2-subtitle">Оплата только после бронирования места!</span>
-                    <input class="main__form2-input" placeholder="Номер брони, получить у менеджера при заказе" required>
+                    <input class="main__form2-input" placeholder="Номер брони, получить у менеджера при заказе"
+                           required>
                     <input class="main__form2-input" placeholder="Сумма, рублей">
                     <input class="main__form2-submit" type="submit">
                 </form>
